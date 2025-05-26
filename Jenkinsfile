@@ -15,7 +15,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    credentialsId: 'git_credentials',
+                    credentialsId: 'github-token',
                     url: 'https://github.com/fanantenana1/TriangleClassifier.git'
             }
         }
